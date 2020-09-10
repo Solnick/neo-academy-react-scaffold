@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  align-items: center;
+  width: 307px;
+  height: 283px;
+  .title {
+    align-self: center;
+  }
+  .submitButton {
+    width: 80px;
+    height: 35px;
+    justify-self: flex-end;
+  }
+}

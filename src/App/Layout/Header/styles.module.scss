@@ -1,0 +1,11 @@
+@import "src/shared/styles/variables";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100px;
+  background-color: $main-green;
+  justify-content: center;
+  align-items: center;
+}

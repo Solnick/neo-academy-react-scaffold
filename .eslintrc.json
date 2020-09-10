@@ -1,0 +1,57 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "jest/globals": true,
+        "cypress/globals": true
+    },
+    "extends": [
+        "airbnb-typescript",
+        "plugin:react/recommended",
+        "plugin:cypress/recommended"
+    ],
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "extensions": [".js" ,".ts", ".tsx"],
+                "paths": ["src"]
+            }
+        }
+    },
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "project": "./tsconfig.json",
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint",
+        "jest",
+        "cypress"
+    ],
+    "rules": {
+        "react/jsx-props-no-spreading": 0,
+        "react/prop-types": 0,
+        "react/jsx-filename-extension": [2, { "extensions": [".tsx"] }],
+        "react/destructuring-assignment": 0,
+        "import/extensions": 0,
+        "import/prefer-default-export": 0,
+        "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+        "comma-dangle": ["error", "never"],
+        "arrow-parens": 0,
+        "max-len": ["error", { "code": 120 }],
+        "no-trailing-spaces": "off",
+        "no-else-return": ["error", { "allowElseIf": true }],
+        "no-param-reassign": 0,
+        "react/display-name": 0,
+        "jsx-a11y/click-events-have-key-events": 0
+    }
+}
